@@ -1,0 +1,298 @@
+
+
+.App {
+  text-align: center;
+}
+
+
+.hero {
+  /* background-color: #ffc0cb; */
+  align-self: center;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  /* background-color: red; */
+  margin: auto;
+  width: 75%;
+}
+
+
+.home_container{
+  /* background-color: blue; */
+  font-family: 'Sono', sans-serif;
+  max-width: 29rem;
+  
+}
+
+.blog{
+  background-color: #29e2ff;
+  width: 8rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow:  1px 1px 3px -1px #000;
+  margin: auto;
+  white-space: nowrap;
+}
+
+.blog:hover{
+  background-color: #e6c843;
+}
+
+.frontButton{
+  display: flex;
+  text-decoration: none;
+  
+}
+
+.header ul {
+  /* background-color: blue; */
+  padding: 0;
+  margin: 0;
+  margin-right: 5rem;
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.header {
+  height: 6rem;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  background-color: #f28457;
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.header a {
+  color: inherit;
+  font-family: 'Sono', sans-serif;
+}
+
+.header a:hover{
+  color: white;
+}
+
+.header ul a:link { 
+  text-decoration: none; 
+  font-size: 1.3rem;
+}
+
+
+.header li:hover {
+  text-decoration:underline;
+}
+
+.siteTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 5rem;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f28457;
+  min-height: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #000;
+}
+
+.social-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+
+.social-circle{
+  height: 55px;
+  width: 55px;
+  max-height: 50px;
+  max-width: 50px;
+  padding: 8px;
+}
+
+
+.resumeDiv{
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  /* background-color: red; */
+}
+
+
+.resumeSectionName{
+  background-color: blue;
+}
+
+.resumeHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  /* background-color: red; */
+}
+
+.entryTitle{
+  /* background-color: red; */
+  font-weight: bold;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  text-align: left;
+  margin-top: 0.8rem;
+
+
+}
+
+.entryHolder{
+  font-size: 1rem;
+  text-align: left;
+  margin-top: -0.5rem;
+  color: #cb6841;
+}
+
+.entryLogistics{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1rem;
+  font-size: 1rem;
+}
+
+
+.entry{
+  margin-bottom: -0.85rem;
+  align-items: left;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.resumeEntry{
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 2rem;
+  margin-top: -0.5rem;
+
+}
+
+.down{
+  color:#cb6841;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.down:hover{
+  width: 100%;
+  transform: scale(1.1);
+  color: #cb6841;
+}
+
+.s{
+  margin-top: 2rem;
+  margin-right: 0.2rem;
+  height: 35px;
+  width: 35px;
+}
+
+
+.button{
+  color: black;
+}
+
+.color{
+  color:#cb6841;
+}
+
+.other{
+  color: #41b9cb;
+}
+
+.duh{
+  color: #8f41cb;
+}
+
+.well{
+  color: #cbad41;
+}
+
+.resumeHeader img{
+  margin: 5px;
+}
+
+.aboutImage{
+  border-radius: 50%;
+  height: 17rem;
+  width: 17rem;
+  margin: auto;
+}
+
+.aboutVis{
+  margin-bottom: 2rem;
+}
+
+.aboutInfo{
+  margin: auto;
+  max-width: 70%;
+  font-size: 1.1rem;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.aboutMe{
+  display: block;
+  padding: 4rem;
+}
+
+.aboutLinks{
+  font-weight: lighter;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.aboutLinks:hover{
+  color:#cb6841;
+  text-decoration: underline;
+}
+
+.aboutWho{
+   margin: auto;
+}
+
+.something{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  /* min-width: 50%; */
+  max-width: 68vw;
+  margin: auto;
+}
+
+.App-header {
+  min-height:86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
