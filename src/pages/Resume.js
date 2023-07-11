@@ -19,31 +19,35 @@ const Resume = () => {
     <div className="App">
       
         <Header name={'JaCk'}/>
-        
-        <div className="App-header">
-            <div class="md:w-9/12 lg:w-9/12 mb-20 mt-10">
+        <div className='App-header'>
 
-              <div class='mt-10 border-b-4 border-black'/>
+              <div className="Res-header">
+                  <div class="md:w-9/12 lg:w-9/12 mb-20 mt-10">
 
-                <button class="bg-transparent font-bold py-2 px-4 inline-flex items-center">
-                  <a href="https://drive.google.com/file/d/13qHdSia0Ae9TtBFBNQ3e8RTHtZb02BXd/view?usp=sharing" target="_blank" rel="noreferrer" class="down">
-                    <img class="s" alt="notsure" loading='lazy' src={down}/>
-                    <h1 class="text-4xl mt-10 uppercase font-extrabold mx-auto text-center">Resume</h1>
-                  </a>
-                </button>
+                    <div class='mt-10 border-b-4 border-black'/>
+
+                      <div className='resume-button'>
+                        <button class="bg-transparent font-bold py-2 px-4 inline-flex items-center">
+                          <a href="https://drive.google.com/file/d/1kVVbPcfEk6lTnycJGlGxDFNNMHlBTvD7/view?usp=sharing" target="_blank" rel="noreferrer" class="down">
+                            {/* <img class="s" alt="notsure" loading='lazy' src={down}/> */}
+                            <h1 class="text-4xl mt-10 uppercase font-extrabold mx-auto text-center">Resume</h1>
+                          </a>
+                        </button>
+                      </div>
 
 
-              {data.sections.map(project => (
-                <div>
-                  <ResumeContent data={project}/>
-                  </div>
-                ))}
-                
-                
-            </div>  
+                    {data.sections.map(project => (
+                      <div>
+                        <ResumeContent data={project}/>
+                        </div>
+                      ))}
+                      
+                      
+                  </div>  
+              </div>                 
+          </div>
+          <Footer/>  
         </div>
-        <Footer/>      
-    </div>
   );
 }
 

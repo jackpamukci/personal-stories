@@ -26,8 +26,8 @@ const About = () => {
             </div>
 
             <div className="aboutInfo">
-              <div class="paragraph-text-black">
-              I'm a full-stack developer and data analyst/engineer with a love for business and sports topics. Currently I am a Data Engineering intern for Bank of Montreal, where I work on retail and enterprise data for stress testing models, and I will be working with Bank of America in the summer as a Software Engineering intern. I also work with the Men's and Women's Soccer team at UNC Charlotte as a Sports Analytics intern. I plan to graduate from UNC Charlotte with a B.S. in Computer Science in Winter 2024.
+              <div class="paragraph-text">
+              I'm a full-stack developer and data analyst/engineer with a love for business and sports topics. Currently I am a Sofware Engineer intern for Bank of America, where I work on the payments team working on the client facing UI for enterprise companies. I also work with the Men's and Women's Soccer team at UNC Charlotte as a Sports Analytics intern. I plan to graduate from UNC Charlotte with a B.S. in Computer Science in Winter 2024.
               </div>
             </div>
 

@@ -36,6 +36,8 @@ export default {
                     location: 'Charlotte, NC',
                     time: 'June 2022',
                     points: [
+                        ['Incoming @ CashPro Payments Team'],
+                        ['Improving enterprise facing payment systems in Java and quantitaive credit estimators in Python']
                     ]
                 },
                 {
@@ -44,6 +46,9 @@ export default {
                     location: 'Charlotte, NC',
                     time: 'January 2022',
                     points: [
+                        ['Developed ETL automation for automizing extraction and regression tasks. The automation resulted in ', <b>75% resource bandwidth reduction</b>, ' in regression testing and data masking loading activities.'],
+                        ['Wrote transformation SQL files to process and load data tables used in bank economic stress testing models with ', <b>17 million+ entries and 100+ columns</b>,' to cloud data lake from on premises, ', <b>cutting processing time by 80%.</b>],
+                        ['Maintained and debugged AWS cloud setup to automate ETL jobs using Airflow and PostgreSQL RDS setup']
                     ]
                 },
                 {
@@ -69,6 +74,7 @@ export default {
                         ["Presented research at 2022 UNC Charlotte Research Symposium, findings implemented on campus wide app"]
                     ]
                 },
+                
                 {
                     title: 'College of Computing & Informatics Teaching Assistant',
                     holder: 'University of North Carolina at Charlotte',

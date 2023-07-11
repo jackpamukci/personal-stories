@@ -1,48 +1,178 @@
-
-
-.App {
-  text-align: center;
+:root {
+  --primary-color: #F4EBDB;
+  --secondary-color: #035207;
+  --text-color: black;
+  --filtero: invert(0%) sepia(3%) saturate(0%) hue-rotate(311deg) brightness(95%) contrast(100%);
 }
+
+[data-theme="dark"] {
+  --primary-color: #36393e;
+  --secondary-color: #7289da;
+  --text-color: rgb(218, 218, 218);
+  --filtero: invert(100%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(103%) contrast(101%);
+}
+
+
+
+* {
+  scrollbar-color: white;
+}
+
+.body-2 {
+  /* background-color: red; */
+  /* border: 1px solid black; */
+}
+
+/* body{
+  background-color: #;
+} */
+
+.darkbuttonholder{
+  /* background-color: transparent; */
+  border: none;
+  /* background-color: red; */
+  max-width: 5%;
+  margin-left: 92.5%;
+  margin-top: 0.7%;
+  
+}
+
+.darkmodebutton{
+  /* max-width: 5%; */
+  /* margin-left: 100%; */
+  filter: var(--filtero);
+  transition: all 0.3s ease-in-out;
+}
+
+.darkbuttonholder :hover{
+  filter: invert(73%) sepia(73%) saturate(815%) hue-rotate(355deg) brightness(102%) contrast(110%);
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 .hero {
   /* background-color: #ffc0cb; */
   align-self: center;
   font-weight: bold;
-  margin: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   white-space: nowrap;
-  width: 100%;
+  width: 80%;
+  padding: 1rem;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
 .paragraph {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  margin-top: 1rem;
   /* background-color: red; */
+  padding: 1rem;
   margin: auto;
-  width: 75%;
+  width: 40%;
+  opacity: 0;
+  animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0) 3s;
+  /* animation: flicker 2s steps(1) forwards; */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  60%{
+    opacity: 1;
+  }
+
+  70%{
+    opacity: 0.1;
+  }
+
+  75%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 0.1;
+  }
+
+  95%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .home_container{
-  /* background-color: blue; */
   font-family: 'Sono', sans-serif;
-  max-width: 29rem;
+  text-align: center;
+  /* width: 15rem; */
+  max-width: 70%;
+  max-height: 50%; 
   
 }
 
 .blog{
-  background-color: #29e2ff;
+  /* background-color: #29e2ff;
   width: 8rem;
   border-radius: 20px;
   border: 1px solid black;
   box-shadow:  1px 1px 3px -1px #000;
-  margin: auto;
+  margin: auto; */
   white-space: nowrap;
+  text-align: center;
 }
 
-.blog:hover{
-  background-color: #e6c843;
+
+
+.front{
+  display: flex;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  /* width: 100%;
+  height: 100%; */
+  min-height: 90vh;
+  object-fit: fill;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
 }
 
 .frontButton{
@@ -69,10 +199,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0 2rem;
-  background-color: #f28457;
-  color: black;
-  border-bottom: 1px solid #000;
+  padding: 0rem;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  border-top: 1px solid #000;
 }
 
 .header a {
@@ -81,7 +213,9 @@
 }
 
 .header a:hover{
-  color: white;
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  
 }
 
 .header ul a:link { 
@@ -92,6 +226,7 @@
 
 .header li:hover {
   text-decoration:underline;
+  transition: all 0.3s ease-in-out;
 }
 
 .siteTitle {
@@ -102,10 +237,11 @@
 }
 
 .footer {
-  background-color: #f28457;
-  min-height: 2rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  min-height: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid #000;
 }
 
@@ -115,6 +251,12 @@
   justify-content: right;
   align-items: center;
   margin-right: 2.5rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(328deg) brightness(107%) contrast(102%);
+}
+
+.social-buttons :hover{
+  filter: invert(24%) sepia(27%) saturate(4143%) hue-rotate(140deg) brightness(91%) contrast(98%);
+  
 }
 
 .social-circle{
@@ -135,8 +277,14 @@
 }
 
 
+
 .resumeSectionName{
   background-color: blue;
+}
+
+.something img{
+  filter: var(--filtero);
+  transition: all 0.3s ease-in-out;
 }
 
 .resumeHeader{
@@ -145,6 +293,12 @@
   align-items: center;
   justify-content: left;
   /* background-color: red; */
+}
+
+.resumeHeader img{
+  filter: var(--filtero);
+  transition: all 0.3s ease-in-out;
+  /* margin-right: 1rem; */
 }
 
 .entryTitle{
@@ -162,7 +316,8 @@
   font-size: 1rem;
   text-align: left;
   margin-top: -0.5rem;
-  color: #cb6841;
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .entryLogistics{
@@ -190,7 +345,8 @@
 }
 
 .down{
-  color:#cb6841;
+  color:var(--secondary-color);
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -200,7 +356,8 @@
 .down:hover{
   width: 100%;
   transform: scale(1.1);
-  color: #cb6841;
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .s{
@@ -216,7 +373,8 @@
 }
 
 .color{
-  color:#cb6841;
+  color:var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .other{
@@ -237,8 +395,8 @@
 
 .aboutImage{
   border-radius: 50%;
-  height: 17rem;
-  width: 17rem;
+  height: 20rem;
+  width: 20rem;
   margin: auto;
 }
 
@@ -248,9 +406,12 @@
 
 .aboutInfo{
   margin: auto;
+  text-align: center;
   max-width: 70%;
   font-size: 1.1rem;
   font-family:'Courier New', Courier, monospace;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutMe{
@@ -258,21 +419,30 @@
   padding: 4rem;
 }
 
+.resume-button{
+  /* background-color: red; */
+  text-align: center;
+}
+
 .aboutLinks{
   font-weight: lighter;
   margin-left: 0.5rem;
   font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutLinks:hover{
-  color:#cb6841;
+  color:var(--secondary-color);
+  transition: all 0.3s ease-in-out;
   text-decoration: underline;
 }
 
 .aboutWho{
    margin: auto;
+   display: flex;
+   align-items: center;
 }
 
 .something{
@@ -292,7 +462,184 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
   color: black;
+  
+}
+
+.Res-header{
+  min-height:86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
 }
 
 
+
+@media only screen and (max-width: 1000px) {
+  .hero{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 1px;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .paragraph{
+    font-size: 14px;
+    width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+  }
+
+  .header{
+    /* display: none; */
+    /* flex-direction: column; */
+    height: 5rem;
+    gap: 0rem;
+    /* height: 6rem; */
+  }
+
+  /* .darkbutt{
+    background-color: red;
+    max-width: 2rem;
+    display: flex;
+  } */
+
+  .header ul a:link { 
+    text-decoration: none; 
+    font-size: 1rem;
+    padding: 0.2rem;
+    
+  }
+
+  .header ul {
+    margin-right: 1rem;
+    /* background-color: red; */
+    /* padding: 2rem; */
+    gap: 0.2rem;
+    margin-left: -28rem;
+    z-index: 2;
+  }
+  
+  
+  .siteTitle{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.4rem;
+    z-index: 3;
+  }
+
+
+  .darkbuttonholder{
+    width: 30rem;
+    
+    /* background-color: red; */
+    
+  }
+
+
+
+  .blog{
+    /* width: 4rem; */
+    /* background-color: red; */
+  }
+
+  .hero{
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    /* animation: none; */
+    border-right: 0;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    /* max-width: fit-content; */
+  }
+
+  .home_container{
+    max-width: 100%;
+    max-height: 70%; 
+    /* background-color: red; */
+    /* margin-top: -2rem; */
+    
+  }
+
+  .footer{
+    /* min-height: 1rem; */
+    padding-top: 2px;
+    padding-bottom: 2px;  
+  }
+
+  .social-circle{
+    height: 42px;
+    width: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    padding: 8px;
+  }
+
+  .social-buttons{
+    margin-right: 1rem;
+  }
+
+  .aboutImage{
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .aboutInfo{
+   max-width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .something{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    /* min-width: 50%; */
+    max-width: 68vw;
+    margin: auto;
+  }
+
+  .aboutWho{
+    margin-top: 0.5rem;
+  }
+
+  .App-header{
+    display: flex;
+    /* background-color: red; */
+    
+  }
+
+
+  .Res-header{
+    /* zoom: 0.3;  */
+    -moz-transform: scale(0.2);
+    -ms-transform:scale(0.49); /* IE 9 */
+    -webkit-transform:scale(0.57); /* Safari and Chrome */
+    -o-transform:scale(0.49); /* Opera */ 
+    flex: 0 0 auto;
+    margin-top: -35rem;
+    margin-bottom: -34rem;
+    /* -moz-transform-origin: 0 0; */
+    /* background-color: red; */
+  }
+  
+
+}

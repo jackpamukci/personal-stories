@@ -5,15 +5,16 @@ import Footer from '../components/Footer';
 import Front from '../components/Front';
 
 
+
 const Home = () => {
   return (
-    <div className="App">
-      
-        <Header name={'JaCk'}/>
-        <div className="App-header">
-          <Front/>
-        </div>
-        <Footer/>      
+    <div class='body-2'>
+        
+          <Header name={'JaCk'}/>
+          <div className="App-header">
+            <Front/>
+          </div>
+          <Footer/>      
     </div>
   );
 }

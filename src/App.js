@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter, BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Front from './components/Front';
@@ -11,13 +11,12 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
-import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
 function App() {
   return (
-    <HashRouter basename="/personal-stories">
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact>
           <Home/>
@@ -35,7 +34,7 @@ function App() {
           <Projects/>
         </Route>
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

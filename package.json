@@ -1,6 +1,5 @@
 {
   "name": "personal-stories",
-  "homepage": "https://jackpamukci.github.io/personal-stories",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,15 +23,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/200.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "overrides": {
-    "autoprefixer": "10.4.5"
-  },
+
   "eslintConfig": {
     "extends": [
       "react-app",

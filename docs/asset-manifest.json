@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-stories/static/css/main.d60d51f9.css",
+    "main.js": "/personal-stories/static/js/main.7d77f9d3.js",
+    "static/js/787.a48b4f0e.chunk.js": "/personal-stories/static/js/787.a48b4f0e.chunk.js",
+    "static/media/aboutme.PNG": "/personal-stories/static/media/aboutme.04f715177ca03935000d.PNG",
+    "static/media/microchip-solid.svg": "/personal-stories/static/media/microchip-solid.c709aaa930f20bd73a4c0fd0ee069450.svg",
+    "static/media/graduation-cap-solid.svg": "/personal-stories/static/media/graduation-cap-solid.82fc4c09a901ff5475fddde209e2380a.svg",
+    "index.html": "/personal-stories/index.html",
+    "static/media/github.svg": "/personal-stories/static/media/github.16a9304e38fd8167989291ab92544e14.svg",
+    "static/media/linkedin.svg": "/personal-stories/static/media/linkedin.03f1d164221e3a81954e6ec24a350288.svg",
+    "static/media/diagram-project-solid.svg": "/personal-stories/static/media/diagram-project-solid.4922eef8e2f736c8fd85ab9a8c6c47fa.svg",
+    "static/media/briefcase-solid.svg": "/personal-stories/static/media/briefcase-solid.0a73cedce3293bcfd472feb06272e0a4.svg",
+    "static/media/download.svg": "/personal-stories/static/media/download.f9c18f1d21e9b2a5714404e92f634b04.svg",
+    "static/media/email.svg": "/personal-stories/static/media/email.da7df5d07ac6dfec5e5bc4618eb6c481.svg",
+    "main.d60d51f9.css.map": "/personal-stories/static/css/main.d60d51f9.css.map",
+    "main.7d77f9d3.js.map": "/personal-stories/static/js/main.7d77f9d3.js.map",
+    "787.a48b4f0e.chunk.js.map": "/personal-stories/static/js/787.a48b4f0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d60d51f9.css",
+    "static/js/main.7d77f9d3.js"
+  ]
+}
