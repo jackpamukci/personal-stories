@@ -7,7 +7,7 @@ const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
   
     useEffect(() => {
-      fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@marin11amf11")
+      fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@cortezd334")
         .then(res => res.json())
         .then(data => setArticles(data.items));
     }, []);

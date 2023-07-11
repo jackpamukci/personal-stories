@@ -3,6 +3,7 @@ import '../App.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Front from '../components/Front';
+import MediumArticles from '../components/MediumArticles';
 
 
 const Resume = () => {
@@ -10,8 +11,8 @@ const Resume = () => {
     <div className="App">
       
         <Header name={'JaCk'}/>
-        <div className="App-header">
-          coming soon.
+        <div className='blogHolder'>
+          <MediumArticles/>
         </div>
         <Footer/>      
     </div>
