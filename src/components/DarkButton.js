@@ -14,7 +14,7 @@ const DarkButton = () => {
     const setLightMode = () => {
         document.querySelector("body").setAttribute("data-theme", "light");
         localStorage.setItem("selectedTheme", "light");
-        document.body.style.backgroundColor = "#035207";
+        document.body.style.backgroundColor = "#0f4612";
 
     };
 

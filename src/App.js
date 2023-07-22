@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Front from './components/Front';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BlogPage from './pages/BlogPage';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path="/projects">
           <Projects/>
+        </Route>
+        <Route path="/blogpage/:postId">
+          <BlogPage/>
         </Route>
       </Switch>
     </BrowserRouter>

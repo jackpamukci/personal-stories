@@ -1,15 +1,19 @@
 :root {
   --primary-color: #F4EBDB;
-  --secondary-color: #035207;
+  --secondary-color: #0f4612;
   --text-color: black;
+  --second-backdrop: #D4CFC5;
   --filtero: invert(0%) sepia(3%) saturate(0%) hue-rotate(311deg) brightness(95%) contrast(100%);
+  --blog-color: #ddd4c3;
 }
 
 [data-theme="dark"] {
-  --primary-color: #36393e;
+  --primary-color: #272a2d;
   --secondary-color: #7289da;
   --text-color: rgb(218, 218, 218);
+  --second-backdrop: #1E1E1E;
   --filtero: invert(100%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(103%) contrast(101%);
+  --blog-color: #191a1d;
 }
 
 
@@ -27,13 +31,18 @@
   background-color: #;
 } */
 
+.blogLogist{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 .darkbuttonholder{
   /* background-color: transparent; */
   border: none;
   /* background-color: red; */
-  max-width: 7%;
-  margin-left: 92.5%;
-  /* margin-top: 0.4%; */
+  max-width: 6%;
+  margin-left: 94%;
+  margin-top: 0.2%;
   
 }
 
@@ -70,6 +79,54 @@
     blink-caret .5s step-end infinite;
 }
 
+.blogPost{
+  /* background-color: red; */
+  max-width: 55%;
+  text-align: left;
+  font-family: 'Lora';
+  font-size: 1.2rem;
+  color: var(--text-color);
+
+  padding: 4rem;
+  background-color: var(--blog-color);
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.blogContent > * {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogContent pre{
+  background-color: var(--second-backdrop);
+  padding: 1.5rem;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+
+
+.blogContent h4{
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.blogContent img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+
+}
+
+.blogContent ul{
+    list-style-type: disc;
+}
+
 .paragraph {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -77,7 +134,7 @@
   /* background-color: red; */
   padding: 1rem;
   margin: auto;
-  width: 40%;
+  width: 55%;
   opacity: 0;
   animation: fadeInAnimation cubic-bezier(0.1, -0.6, 0.2, 0) 3s;
   /* animation: flicker 2s steps(1) forwards; */
@@ -170,7 +227,7 @@
   background-color: var(--primary-color);
   display: flex;
   transition: all 0.3s ease-in-out;
-  min-height: 90vh;
+  min-height: 85vh;
   object-fit: fill;
   align-items: center;
   justify-content: center;
@@ -178,33 +235,46 @@
 
 .blog-post-grid{
   margin-top: 5rem;
+  display: flex;
+  min-width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-left: 2%
 }
 
 .blog-post-item{
   transform: translate3d(0, 0, 0);
   transition-duration: 0.2s;
   transition: transform ease;
-  
+  /* background-color: blue; */
+
+  min-width: 35rem;
+  max-width: 35rem;
+  display: flex;
+
 }
 
-.blog-post-item :hover{
+.big-card :hover{
   transform: translate3d(-6px, -6px, -6px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
   transition-duration: 0.2s;
   cursor: pointer;
 }
 
 .big-card{
-  max-width: 40%;
+  min-width: 35rem;
   margin: 2rem;
-  margin-left: 33rem;
+  /* margin-left: 28rem; */
   margin-bottom: 4rem;
   font-family: 'Sono';
-  
+
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.2s;
+  transition: transform ease;
+
+  /* background-color: red; */
 }
 
-.big-card :hover{
-  pointer-events:none;
-}
 
 .big-link{
   text-decoration: none;
@@ -564,6 +634,20 @@
     width: 100%;
   }
 
+
+  .blog-post-item{
+    max-width: 20rem;
+    min-width: 20rem;
+    margin-right: 50%;
+    
+  }
+
+  .big-card{
+    max-width: 20rem;
+    min-width: 20rem;
+    
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -572,6 +656,19 @@
     line-height: 1.5;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .blog-post-item{
+    /* max-width: 10rem;
+    min-width: 10rem; */
+    margin-right: 15rem;
+    
+  }
+
+  .big-card{
+    /* max-width: 10rem;
+    min-width: 10rem;
+    margin-left: 10rem; */
   }
 
   .paragraph{
@@ -619,6 +716,10 @@
     margin-left: 2rem;
     margin-bottom: 0.4rem;
     z-index: 3;
+  }
+
+  .big-card{
+    margin-left: 35%;
   }
 
 

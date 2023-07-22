@@ -7,7 +7,7 @@ const Front = () => {
                 <div >
                     <h1 className="hero">Hi, my name is Jack.</h1>
                 </div>
-                <p className="paragraph">I'm a computer science student with an affinity for data. <br/>
+                <p className="paragraph">I'm a computer science student with an affinity for data.
                     I have experience in <b className="other">software development</b>, <b className="duh">data science</b>, and <b className="well">sports analytics</b>, 
                     and am currently running a blog for football analysis.
                 </p>
