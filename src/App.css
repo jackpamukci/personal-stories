@@ -207,21 +207,21 @@
 }
 
 .blog{
-  background-color: #29e2ff;
+  /* background-color: #29e2ff;
   width: 8rem;
   border-radius: 20px;
   border: 1px solid black;
-  box-shadow:  1px 1px 3px -1px #000;
+  box-shadow:  1px 1px 3px -1px #000; */
   margin: auto;
   white-space: nowrap;
   text-align: center;
-  color: black;
+  color: var(--text-color);
   transition: all 0.3s ease-in-out;
 }
 
-.header div.blog:hover{
+/* .header div.blog:hover{
   background-color: #ddbc44;
-}
+} */
 
 .blogHolder{
   background-color: var(--primary-color);
@@ -332,7 +332,7 @@
   /* background-color: blue; */
   padding: 0;
   margin: 0;
-  margin-right: 5rem;
+  margin-right: 8rem;
   list-style: none;
   display: flex;
   gap: 3.5rem;
@@ -372,7 +372,7 @@
 
 
 .header li:hover {
-  text-decoration:underline;
+  /* text-decoration:underline; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -629,7 +629,7 @@
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .hero{
     width: 100%;
   }
@@ -650,7 +650,7 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   body {
     font-size: 1px;
     line-height: 1.5;
