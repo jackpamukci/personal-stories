@@ -4,16 +4,23 @@ import MediumCard from "./MediumCard";
 import Loader from 'react-loader-spinner';
 
 
+const { parse } = require('rss-to-json')
+
+
 const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
+    const url = "https://cors-anywhere.herokuapp.com/https://medium.com/feed/@readingthepitch"
   
     useEffect(() => {
-      fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40readingthepitch")
-        .then(res => res.json())
+      fetch("https://medium.com/feed/@readingthepitch")
+        .then(res => res.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
-          setArticles(data.items);
-          setIsLoading(false);
+          console.log(data);
+          // setArticles(data.items);
+          // setIsLoading(false);
         });
     }, []);
   
