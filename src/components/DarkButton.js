@@ -7,14 +7,14 @@ const DarkButton = () => {
     const setDarkMode = () => {
         document.querySelector("body").setAttribute("data-theme", "dark");
         localStorage.setItem("selectedTheme", "dark");
-        document.body.style.backgroundColor = "#7289da";
+        document.body.style.backgroundColor = "#6f72cf";
 
     };
 
     const setLightMode = () => {
         document.querySelector("body").setAttribute("data-theme", "light");
         localStorage.setItem("selectedTheme", "light");
-        document.body.style.backgroundColor = "#0f4612";
+        document.body.style.backgroundColor = "#192263";
 
     };
 

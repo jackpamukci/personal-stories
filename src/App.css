@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #F4EBDB;
-  --secondary-color: #0f4612;
+  --primary-color: #eae8e0;
+  --secondary-color: #192263;
   --text-color: black;
   --second-backdrop: #D4CFC5;
   --filtero: invert(0%) sepia(3%) saturate(0%) hue-rotate(311deg) brightness(95%) contrast(100%);
@@ -9,7 +9,7 @@
 
 [data-theme="dark"] {
   --primary-color: #272a2d;
-  --secondary-color: #7289da;
+  --secondary-color: #6f72cf;
   --text-color: rgb(218, 218, 218);
   --second-backdrop: #1E1E1E;
   --filtero: invert(100%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(103%) contrast(101%);

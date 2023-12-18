@@ -31,20 +31,30 @@ export default {
             imageSource: briefcase,
             entries: [
                 {
-                    title: 'Incoming Software Engineering Intern',
+                    title: 'Data Science Intern',
+                    holder: 'src | ftbl',
+                    location: 'Remote',
+                    time: 'August 2023',
+                    points: [
+                        ['Utilizing ', <b>LSTM</b>, ' and ', <b>Transformer</b>, ' architectures in Python to accurately model  movements of play as time-series data to accurately assign  market value to  players throughout ', <b>30+ football leagues</b>, ' across the world'],
+                        ['Innovatively designing the workflow to efficiently process, analyze, and apply machine learning model to ', <b>large-scale datasets</b>, '  on ', <b>Amazon S3</b>, ', and efficiently storing them for optimal storage and retrieval time']
+                    ]
+                },
+                {
+                    title: 'Software Engineering Intern',
                     holder: 'Bank of America',
                     location: 'Charlotte, NC',
-                    time: 'June 2022',
+                    time: 'June 2023',
                     points: [
-                        ['Incoming @ CashPro Payments Team'],
-                        ['Improving enterprise facing payment systems in Java and quantitaive credit estimators in Python']
+                        ['Utilizing ', <b>LSTM</b>, ' and ', <b>Transformer</b>, ' architectures in Python to accurately model  movements of play as time-series data to accurately assign  market value to  players throughout ', <b>30+ football leagues</b>, ' across the world'],
+                        ['Innovatively designing the workflow to efficiently process, analyze, and apply machine learning model to ', <b>large-scale datasets</b>, '  on ', <b>Amazon S3</b>, ', and efficiently storing them for optimal storage and retrieval time']
                     ]
                 },
                 {
                     title: 'ETL Development Intern',
                     holder: 'Bank of Montreal Harris',
                     location: 'Charlotte, NC',
-                    time: 'January 2022',
+                    time: 'January 2023',
                     points: [
                         ['Developed ETL automation for automizing extraction and regression tasks. The automation resulted in ', <b>75% resource bandwidth reduction</b>, ' in regression testing and data masking loading activities.'],
                         ['Wrote transformation SQL files to process and load data tables used in bank economic stress testing models with ', <b>17 million+ entries and 100+ columns</b>,' to cloud data lake from on premises, ', <b>cutting processing time by 80%.</b>],
