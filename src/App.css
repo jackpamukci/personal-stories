@@ -4,7 +4,7 @@
   --text-color: black;
   --second-backdrop: #d7d5d1;
   --filtero: invert(0%) sepia(3%) saturate(0%) hue-rotate(311deg) brightness(95%) contrast(100%);
-  --blog-color: #ddddc3;
+  --blog-color: #ded8cd;
 }
 
 [data-theme="dark"] {
