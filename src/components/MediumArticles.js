@@ -15,7 +15,7 @@ const MediumArticles = () => {
         // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
           console.log(data);
-          // setArticles(data.items);
+          setArticles(data);
           setIsLoading(false);
         });
     }, []);
@@ -30,7 +30,7 @@ const MediumArticles = () => {
       // </Row>
       <div className="blog-post-grid">
         <div className="collection-list" role="list">
-        {isLoading ? <div>...</div> : 
+        {isLoading ? <div>...loading</div> : 
            articles.map((article, index) => (
             <div className="blog-post-item" role="listitem">
               <a href={`/blogpage/${index}`} class="big-link">

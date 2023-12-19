@@ -9,7 +9,7 @@ const BlogContent = ({ article }) => {
     <div className="blogPost">
       <div className="blogLogist">
         <h1>{article.title}</h1>
-        <p>{new Date(article.pubDate).toLocaleDateString('en-US', options)}</p>
+        <p>{new Date(article.pubdate).toLocaleDateString('en-US', options)}</p>
       </div>
       <hr/>
       <div className="blogContent" dangerouslySetInnerHTML={{ __html: article.content }} />

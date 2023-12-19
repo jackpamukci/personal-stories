@@ -17,10 +17,10 @@ const BlogPage = () => {
     const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
-      fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40readingthepitch")
+      fetch("/api/medium")
         .then(res => res.json())
         .then(data => {
-            setArticles(data['items']);
+            setArticles(data);
             setIsLoading(false);
         } );
     }, []);
@@ -35,7 +35,7 @@ const BlogPage = () => {
         <Header name={'JaCk'}/>
         <div className="App-header">
               
-           {isLoading ? <h3>...</h3> : 
+           {isLoading ? <h3>...loading</h3> : 
            <BlogContent article={article}/>}   
         </div>
         <Footer />   
