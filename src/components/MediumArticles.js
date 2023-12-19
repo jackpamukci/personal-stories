@@ -5,9 +5,6 @@ import Loader from 'react-loader-spinner';
 
 import Parser from 'rss-parser'
 
-const { parse } = require('rss-n')
-
-
 const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
