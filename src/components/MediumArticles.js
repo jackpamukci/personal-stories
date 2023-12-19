@@ -11,16 +11,15 @@ const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const url = "https://cors-anywhere.herokuapp.com/https://medium.com/feed/@readingthepitch"
   
     useEffect(() => {
-      fetch("https://medium.com/feed/@readingthepitch")
+      fetch("/api/medium")
         .then(res => res.text())
-        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
           console.log(data);
           // setArticles(data.items);
-          // setIsLoading(false);
+          setIsLoading(false);
         });
     }, []);
   
