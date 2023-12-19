@@ -3,8 +3,9 @@ import { Row, Col } from "react-bootstrap";
 import MediumCard from "./MediumCard";
 import Loader from 'react-loader-spinner';
 
+import Parser from 'rss-parser'
 
-const { parse } = require('rss-to-json')
+const { parse } = require('rss-n')
 
 
 const MediumArticles = () => {
@@ -13,8 +14,9 @@ const MediumArticles = () => {
 
   
     useEffect(() => {
-      fetch("/api/medium")
-        .then(res => res.text())
+      const parser = new Parser();
+      const feed = parser.parseURL("/api/medium")
+        // .then(res => res.text())
         // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
           console.log(data);
