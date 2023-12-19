@@ -3,7 +3,6 @@ import { Row, Col } from "react-bootstrap";
 import MediumCard from "./MediumCard";
 import Loader from 'react-loader-spinner';
 
-import Parser from 'rss-parser'
 
 const MediumArticles = () => {
     const [articles, setArticles] = useState([]);
@@ -11,9 +10,8 @@ const MediumArticles = () => {
 
   
     useEffect(() => {
-      const parser = new Parser();
-      const feed = parser.parseURL("/api/medium")
-        // .then(res => res.text())
+      fetch("/api/medium")
+        .then(res => res.json())
         // .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
           console.log(data);
