@@ -103,6 +103,15 @@ export default {
             imageSource: project,
             entries: [
                 {
+                    title: 'Live Betfair Trader',
+                    holder: 'Python, Google Cloud Platform',
+                    location: 'Charlotte, NC',
+                    time: 'October 2024',
+                    points: [
+                        ['Implementing an automated in-play betting model for soccer matches on the Betfair exchange. Model forecasts are calculated from an XGBoost model and updated using Kalman filters, then deployed with Kubernetes.'],                        ['Live betting data is collected and hosted on Google Cloud Platform, where an ETL pipeline processes data and stores it in BigQuery, from which betting backtesting is run. Cloud setup is implemented with Terraform']
+                    ]
+                },
+                {
                     title: 'Tackling the Maldini Doctrine: Quantifying Defensive Positioning',
                     holder: 'Stats Perform',
                     location: 'London, England',
@@ -124,17 +133,6 @@ export default {
                         ['Wrote ', <b>Flask REST API</b>,' to fetch synonyms, antonyms and Urban Dictionary terms, deployed on ', <b>Heroku</b>]
                     ]
                 },
-                {
-                    title: 'Find it Used',
-                    holder: 'Python, Flask, React, Requests-HTML',
-                    location: 'Charlotte, NC',
-                    time: 'February 2022',
-                    points: [
-                        ['Built ', <b>full stack</b>,' web extension to aggregate products from a wide range of retailers to find the best price. Targeted towards online shoppers looking to find the best deal for products'],
-                        ['Migrated ',<b>REST API</b> ,' from Node.js to Python ', <b>(reduced API call time by 70%)</b>,' using Flask and the Requests-HTML library to scrape large online marketplaces Amazon, Ebay and Newegg for essential data'],
-                        ['Implemented ', <b>front end GUI</b>, ' using ', <b>React</b>, ' and designed using ', <b>Bulma</b>, '. Learned key skills for ',<b>software engineering</b>]
-                    ]
-                }
             ]
         },
         // {

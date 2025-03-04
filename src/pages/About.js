@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Front from '../components/Front';
 
-import about from '../images/aboutme.PNG'
+import about from '../images/asdf.png'
 
 import github from '../images/github.svg'
 import email from '../images/email.svg'
@@ -27,8 +27,7 @@ const About = () => {
 
             <div className="aboutInfo">
               <div class="paragraph-text">
-              I'm a full-stack developer and data scientist/engineer with a love for business and sports topics. Currently I am a Sofware Engineer intern for Bank of America, where I am on the payments team working on the client facing banking UI for enterprise companies. I also work with the Men's and Women's Soccer team at UNC Charlotte as a Sports Analytics intern. I plan to graduate from UNC Charlotte with a B.S. in Computer Science in Winter 2024.
-              </div>
+              I'm a  data scientist with a love for business and sports topics. I graduated with a B.S. in Computer Science with a concentration in Data Science from the University of North Carolina at Charlotte. I've had the opportunity to work in a variety of roles across my internships, including as a data scientist for an Major League Soccer consultancy firm and a data engineer for two separate banks.               </div>
             </div>
 
           <div>
