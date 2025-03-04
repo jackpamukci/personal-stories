@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #eae8e0;
+  --primary-color: #ffffff;
   --secondary-color: #192263;
   --text-color: black;
-  --second-backdrop: #d7d5d1;
+  --second-backdrop: #d8d8d8;
   --filtero: invert(0%) sepia(3%) saturate(0%) hue-rotate(311deg) brightness(95%) contrast(100%);
-  --blog-color: #ded8cd;
+  --blog-color: #d4d4d4;
 }
 
 [data-theme="dark"] {
